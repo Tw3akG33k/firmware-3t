@@ -1,10 +1,9 @@
 getprop("ro.display.series") == "OnePlus 3T" || abort("E3004: This package is for \"OnePlus 3T\" devices; this is a \"" + getprop("ro.display.series") + "\".");
-ui_print("original OxygenOS OpenBeta 5 (7.1.1) firmware");
+ui_print("original OxygenOS OpenBeta 6 (7.1.1) firmware");
 ui_print("repacked by nvertigo67@xda");
 ui_print("thread: https://forum.xda-developers.com/oneplus-3t/development/rom-lineageos-14-1-t3547024");
 show_progress(0.050000, 10);
 show_progress(0.050000, 5);
-package_extract_file("boot.img", "/dev/block/bootdevice/by-name/boot");
 show_progress(0.200000, 10);
 ui_print("Writing static_nvbk image...");
 package_extract_file("RADIO/static_nvbk.bin", "/dev/block/bootdevice/by-name/oem_stanvbk");
