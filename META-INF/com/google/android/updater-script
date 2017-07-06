@@ -1,5 +1,5 @@
 getprop("ro.display.series") == "OnePlus 3T" || abort("E3004: This package is for \"OnePlus 3T\" devices; this is a \"" + getprop("ro.display.series") + "\".");
-ui_print("original OxygenOS OpenBeta 9 (7.1.1) firmware");
+ui_print("original OxygenOS OpenBeta 10 (7.1.1) firmware");
 ui_print("repacked by nvertigo67@xda");
 ui_print("thread: https://forum.xda-developers.com/oneplus-3t/development/rom-lineageos-14-1-t3547024");
 show_progress(0.050000, 10);
