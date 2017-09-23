@@ -1,5 +1,5 @@
 getprop("ro.display.series") == "OnePlus 3T" || abort("E3004: This package is for \"OnePlus 3T\" devices; this is a \"" + getprop("ro.display.series") + "\".");
-ui_print("original OxygenOS OpenBeta 14 (7.1.1) firmware");
+ui_print("original OxygenOS OpenBeta 15 (7.1.1) firmware");
 ui_print("repacked by nvertigo67@xda");
 ui_print("thread: https://forum.xda-developers.com/oneplus-3t/development/rom-lineageos-14-1-t3547024");
 show_progress(0.050000, 10);
@@ -35,6 +35,7 @@ package_extract_file("firmware-update/xbl.elf", "/dev/block/bootdevice/by-name/x
 package_extract_file("firmware-update/rpm.mbn", "/dev/block/bootdevice/by-name/rpmbak");
 ), "");
 msm.boot_update("finalize");
+package_extract_file("firmware-update/logo.bin", "/dev/block/bootdevice/by-name/LOGO");
 package_extract_file("firmware-update/NON-HLOS.bin", "/dev/block/bootdevice/by-name/modem");
 package_extract_file("firmware-update/adspso.bin", "/dev/block/bootdevice/by-name/dsp");
 package_extract_file("firmware-update/BTFM.bin", "/dev/block/bootdevice/by-name/bluetooth");
