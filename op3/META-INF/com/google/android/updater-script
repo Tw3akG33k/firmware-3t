@@ -1,6 +1,7 @@
 getprop("ro.display.series") == "OnePlus 3" || abort("E3004: This package is for \"OnePlus 3\" devices; this is a \"" + getprop("ro.display.series") + "\".");
 ui_print("OnePlus 3");
 ui_print("original OxygenOS 9.0.1 (pie) firmware");
+ui_print("bootloader and keymaster from 5.0.8");
 ui_print("repacked by nvertigo67@xda");
 ui_print("thread: https://forum.xda-developers.com/oneplus-3t/development/rom-nlos-15-1-20180223-t3754855");
 show_progress(0.050000, 10);
